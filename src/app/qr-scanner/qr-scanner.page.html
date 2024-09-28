@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Scanner de QR Code
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="scannedData">
+    <ion-card-header>
+      <ion-card-title>QR Code Scanned</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Type: {{ scannedData.format }}</p>
+      <p>Data: {{ scannedData.text }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

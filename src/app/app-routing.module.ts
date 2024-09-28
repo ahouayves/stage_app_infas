@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule),
     canActivate: [AuthGuard] // Ajoutez le gardien d'authentification
   },
+  {
+    path: 'qr-scanner',
+    loadChildren: () => import('./qr-scanner/qr-scanner.module').then( m => m.QrScannerPageModule)
+  },
 ];
 @NgModule({
   imports: [

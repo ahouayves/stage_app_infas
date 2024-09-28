@@ -9,11 +9,12 @@ import { AppComponent } from './app.component';
 
 import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 import { HttpClientModule } from '@angular/common/http';
+import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx'; // Ajoutez cette ligne
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule,HttpClientModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [Geolocation,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [Geolocation,BarcodeScanner,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
