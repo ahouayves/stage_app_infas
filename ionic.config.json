@@ -1,0 +1,7 @@
+{
+  "name": "stageApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

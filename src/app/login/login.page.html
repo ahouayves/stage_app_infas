@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar id="welcome">
+    <ion-title>
+      STAGE INFAS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Connexion Etudiant</h1>
+  <form (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Matricule</ion-label>
+      <ion-input [(ngModel)]="matricule" name="matricule" required minlength="9"></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit">Se connecter</ion-button>
+  </form>
+
+<div>
+  <img class="container" src="../../assets/logo.png" alt="">
+</div>
+</ion-content>
